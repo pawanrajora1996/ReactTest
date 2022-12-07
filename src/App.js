@@ -4,22 +4,22 @@ import './App.css';
 function App() {
   return (
     <div className=''>
-<Header/>
-<LoginButton/>
+      <Header />
+      <LoginButton />
     </div>
   )
 }
 
-function LoginButton(){
-return(
-  <button>Login</button>
-)
+function LoginButton() {
+  return (
+    <button>Login</button>
+  )
 }
 
-function Header(){
-  return(
+function Header() {
+  return (
     <h1>Header</h1>
   )
-  }
-  
+}
+
 export default App;
