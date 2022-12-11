@@ -79,15 +79,19 @@ button{
 .header-section{
   width: 80%;
   height: auto;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   margin: auto;
+}
+
+.header-section h1{
+  text-align: center;
 }
 
 .main-card{
 
   width:80%;
   height: 400px;
-  background-color: #61dafb;
+  /* background-color: #61dafb; */
   display: flex;
   margin: auto;
 
@@ -98,23 +102,62 @@ button{
 .main-card .first{
   width:33.3%;
   height: 400px;
-  background-color: blue;
+  /* background-color: blue; */
+  position: relative;
+  top:0;
+  left: 0;
 
 }
+
+.main-card .first img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+.main-card .first  .up{
+  /* background-color: chartreuse; */
+  position: absolute;
+  top: 80px;
+  left: 150px;
+ 
+}
+
 
 .main-card .second{
   width: 33.3%;
   height: 400px;
-  background-color:brown;
+  /* background-color:brown; */
+  margin-left: 20px;
+  margin-right: 20px;
   
 }
+   
+
+.main-card .second img{
+  width: 100%;
+  height: auto;
+ 
+
+}
+
+
 
 
 .main-card .third{
   width:33.4%;
   height: 400px;
-  background-color:cyan;
+  /* background-color:cyan; */
   
+}
+
+
+.main-card .third img{
+  width: 100%;
+  height: auto;
+ 
+
 }
 
 
