@@ -1,0 +1,54 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+.input-design{
+    width: 120px;
+    height: 30px;
+    border: none;
+}
+
+
+.button-design{
+    border: none;
+    width: 60px;
+    height: 30px;
+    background-color: brown;
+    cursor: pointer;
+}
+
+.main{
+     display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.design-ul{
+    background-color: aqua;
+    width: 200px;
+    margin-top:20px;
+    height: auto;
+    display: block;
+    
+}
+
+.design-ul li{
+   list-style:none;
+   padding: 10px;
+}
+
+

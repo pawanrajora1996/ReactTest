@@ -1,25 +1,15 @@
-import ToggleButton from './component/ToggleButton'
-import ControlForm from './component/ControlUncontrolForm';
-import { UnControlForm } from './component/ControlUncontrolForm';
-
-// import Header from './component/header'
-// import About from './component/about';
-import './App.css';
-
+import FreshTodoList from "./component/freshtodoList";
+import ToDoListUncontroled from "./component/toDoList/toDOListUncontroled";
 
 
 function App() {
   return (
   
     <div>
-    {/* <ToggleButton/> */}
-    <ControlForm/>
-    <UnControlForm/>
-     
+     <ToDoListUncontroled/>
      </div>
     
   );
 };
-
 
 export default App;
