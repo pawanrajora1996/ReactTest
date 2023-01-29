@@ -1,12 +1,12 @@
 import FreshTodoList from "./component/freshtodoList";
-import ToDoListUncontroled from "./component/toDoList/toDOListUncontroled";
+// import ToDoListUncontroled from "./component/toDoList/toDOListUncontroled";
 
 
 function App() {
   return (
   
     <div>
-     <ToDoListUncontroled/>
+     <FreshTodoList/>
      </div>
     
   );

@@ -5,8 +5,10 @@ import "./freshTodo.css";
 
 
 function FreshTodoList() {
-    const inputref = useRef("")
-    const [todos, updatetodos] = useState([]);
+const inputref = useRef("")
+const [todos, updatetodos] = useState([
+    {id:''+Date.now(), text:'default todo item', status:'active', editing:true }
+  ]);
 
 
 
@@ -19,14 +21,38 @@ function FreshTodoList() {
                     <span>{text}</span>
                     <span>{status}</span>
                 </li>
+
+            <div>
+            <button
+                    id={'btn-done--'+id}
+                    onClick={handleMarkDone} 
+                    disabled={status === 'done'}>
+                      Mark done
+                  </button>
+            </div>
+
             </div>
 
         )
     }
 
 
+    function handleMarkDone(event) {
+        let id = event.target.id;
+        id = id.split('--')[1];
+        const index = todos.findIndex((todo) => id === todo.id);
+        const todo = {...todos[index], status:'done'}
+        const newTodos = [...todos];
+        newTodos[index] = todo;
+        updatetodos(newTodos);
+      }
+
+
+
+
+
     function AddTodo() {
-        const todo = { text: inputref.current.value, id: Date.now(), status: "pending" }
+        const todo = { text: inputref.current.value, id: Date.now(), }
         const newTodos = JSON.parse(JSON.stringify(todos));
         newTodos.push(todo);
         updatetodos(newTodos);

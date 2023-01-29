@@ -38,7 +38,7 @@ body{
 }
 
 .design-ul{
-    background-color: aqua;
+   
     width: 200px;
     margin-top:20px;
     height: auto;
@@ -47,8 +47,14 @@ body{
 }
 
 .design-ul li{
+    background-color: aqua;
    list-style:none;
    padding: 10px;
+   margin-top:50px;
 }
 
 
+button:disabled{
+    cursor:no-drop !important;
+    
+}
