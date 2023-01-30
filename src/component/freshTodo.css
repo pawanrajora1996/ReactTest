@@ -17,11 +17,16 @@ body{
 }
 
 .input-design{
-    width: 120px;
+    width: 320px;
     height: 30px;
     border: none;
+    margin-right:5px;
 }
 
+h1{color:#fff;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 
 .button-design{
     border: none;
@@ -29,17 +34,20 @@ body{
     height: 30px;
     background-color: brown;
     cursor: pointer;
+    color:#fff;
 }
 
 .main{
      display: flex;
     justify-content: center;
     align-items: center; 
+    flex-direction: column;
+   
 }
 
 .design-ul{
    
-    width: 200px;
+    width: 400px;
     margin-top:20px;
     height: auto;
     display: block;
@@ -57,4 +65,16 @@ body{
 button:disabled{
     cursor:no-drop !important;
     
+}
+
+input{padding-left:10px;}
+
+.design-button-all{
+    width:80px;
+    height: 35px;
+    background-color: crimson;
+    color:#fff;
+    border:none;
+    margin-right: 20px;
+    margin-top: 10px;
 }
